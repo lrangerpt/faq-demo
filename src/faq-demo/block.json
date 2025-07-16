@@ -1,0 +1,65 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "usercentrics/faq-demo",
+	"version": "0.1.0",
+	"title": "Faq Demo for Usercentrics",
+	"category": "widgets",
+	"icon": "superhero",
+	"description": "FAQ Gutenberg Block for Usercentrics.",
+	"example": {},
+	"supports": {
+		"html": false,
+		"color": {
+			"background": false,
+			"text": true,
+			"link": false
+		},
+		"spacing": {
+			"margin": true,
+			"padding": true
+		},
+		"typography": {
+			"fontSize": true,
+			"lineHeight": true,
+			"fontFamily": true,
+			"textTransform": false
+		}
+	},
+	"attributes": {
+		"faqs": {
+			"type": "array",
+			"default": []
+		},
+		"textColor": {
+			"type": "string",
+			"default": "#000"
+		},
+		"backgroundColor": {
+			"type": "string",
+			"default": "#fff"
+		},
+		"accordionColor": {
+			"type": "string",
+			"default": "#f9f9f9"
+		},
+		"style": {
+			"type": "object",
+			"default": {
+				"color": {
+					"background": "#fff",
+					"text": "#000"
+				},
+				"spacing": {
+					"padding": "0",
+					"margin": "0"
+				}
+			}
+		}
+	},
+	"textdomain": "usercentrics",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"viewScript": "file:./view.js"
+}
