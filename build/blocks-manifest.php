@@ -44,7 +44,7 @@ return array(
 			),
 			'backgroundColor' => array(
 				'type' => 'string',
-				'default' => '#fff'
+				'default' => 'transparent'
 			),
 			'accordionColor' => array(
 				'type' => 'string',
@@ -54,7 +54,7 @@ return array(
 				'type' => 'object',
 				'default' => array(
 					'color' => array(
-						'background' => '#fff',
+						'background' => 'transparent',
 						'text' => '#000'
 					),
 					'spacing' => array(

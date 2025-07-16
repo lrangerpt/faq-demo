@@ -37,7 +37,7 @@
     },
     "backgroundColor": {
       "type": "string",
-      "default": "#fff"
+      "default": "transparent"
     },
     "accordionColor": {
       "type": "string",
@@ -47,7 +47,7 @@
       "type": "object",
       "default": {
         "color": {
-          "background": "#fff",
+          "background": "transparent",
           "text": "#000"
         },
         "spacing": {

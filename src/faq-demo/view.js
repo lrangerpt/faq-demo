@@ -22,28 +22,27 @@
 
 
 document.addEventListener('DOMContentLoaded', function () {
-  const accordion = document.querySelector('.faq-demo-accordion');
-  if (!accordion) return;
-  accordion.addEventListener('click', function (e) {
-    const btn = e.target.closest('.faq-demo-question');
-    if (!btn) return;
-    const item = btn.closest('.faq-demo-item');
-    const answer = item.querySelector('.faq-demo-answer');
-    const icon = btn.querySelector('.faq-demo-icon');
-    const expanded = btn.getAttribute('aria-expanded') === 'true';
+  document.querySelectorAll('.faq-demo-accordion').forEach(accordion => {
+    accordion.addEventListener('click', function (e) {
+      const btn = e.target.closest('.faq-demo-question');
+      if (!btn) return;
+      const item = btn.closest('.faq-demo-item');
+      const answer = item.querySelector('.faq-demo-answer');
+      const expanded = btn.getAttribute('aria-expanded') === 'true';
 
-    // Close all
-    accordion.querySelectorAll('.faq-demo-item').forEach(i => {
-      i.classList.remove('open');
-      i.querySelector('.faq-demo-question').setAttribute('aria-expanded', 'false');
-      i.querySelector('.faq-demo-answer').setAttribute('hidden', '');
+      // Close all in this accordion only
+      accordion.querySelectorAll('.faq-demo-item').forEach(i => {
+        i.classList.remove('open');
+        i.querySelector('.faq-demo-question').setAttribute('aria-expanded', 'false');
+        i.querySelector('.faq-demo-answer').setAttribute('hidden', '');
+      });
+
+      // Open this one if it was closed
+      if (!expanded) {
+        item.classList.add('open');
+        btn.setAttribute('aria-expanded', 'true');
+        answer.removeAttribute('hidden');
+      }
     });
-
-    // Open this one if it was closed
-    if (!expanded) {
-      item.classList.add('open');
-      btn.setAttribute('aria-expanded', 'true');
-      answer.removeAttribute('hidden');
-    }
   });
 }); 
