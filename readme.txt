@@ -1,55 +1,56 @@
-=== Faq Demo ===
-Contributors:      The WordPress Contributors
-Tags:              block
+=== Usercentrics FAQ Block ===
+Contributors:      ruilopes, usercentrics
+Tags:              block, faq, accordion, gutenberg, schema, seo, accessibility
 Tested up to:      6.7
 Stable tag:        0.1.0
 License:           GPL-2.0-or-later
 License URI:       https://www.gnu.org/licenses/gpl-2.0.html
 
-Example block scaffolded with Create Block tool.
+SEO-friendly and WCAG 2.1 FAQ accordion block for WordPress, built with the Block Editor (Gutenberg).  
+Easily add, edit, and display FAQs anywhere on your site, with full support for custom colors.
 
 == Description ==
 
-This is the long description. No limit, and you can use Markdown (as well as in the following sections).
+**Usercentrics FAQ Block** lets you create beautiful, accessible, and SEO-optimized FAQ sections using the WordPress Block Editor.
 
-For backwards compatibility, if this section is missing, the full length of the short description will be used, and
-Markdown parsed.
+- Accordion UI: Clean and mobile-friendly.
+- Block Editor Integration: Add, edit, and delete FAQs visually.
+- Custom Colors: Choose your own accordion background color.
+- Accessible: Keyboard navigable, ARIA attributes, and WCAG 2.1 compliant.
+- SEO Optimized: Outputs [schema.org FAQPage](https://developers.google.com/search/docs/appearance/structured-data/faqpage) JSON-LD for Google.
 
 == Installation ==
 
-This section describes how to install the plugin and get it working.
-
-e.g.
-
 1. Upload the plugin files to the `/wp-content/plugins/faq-demo` directory, or install the plugin through the WordPress plugins screen directly.
-1. Activate the plugin through the 'Plugins' screen in WordPress
+2. Activate the plugin through the 'Plugins' screen in WordPress.
+3. (For development) Run `npm install` and `npm run build` in the plugin directory.
 
+== Usage ==
+
+1. In the WordPress editor, add the **Usercentrics FAQ Block** to your page or post.
+2. Click **Add FAQ** to create new question/answer pairs.
+3. Use the block sidebar to customize the accordion background color.
+4. Save and view your FAQs. They will appear in a styled and accessible accordion.
 
 == Frequently Asked Questions ==
 
-= A question that someone might have =
+= Is this block accessible? =
 
-An answer to that question.
+Yes! The block uses semantic HTML, ARIA attributes, and is keyboard navigable.
 
-= What about foo bar? =
+= Does it output schema.org markup for SEO? =
 
-Answer to foo bar dilemma.
-
-== Screenshots ==
-
-1. This screen shot description corresponds to screenshot-1.(png|jpg|jpeg|gif). Note that the screenshot is taken from
-the /assets directory or the directory that contains the stable readme.txt (tags or trunk). Screenshots in the /assets
-directory take precedence. For example, `/assets/screenshot-1.png` would win over `/tags/4.3/screenshot-1.png`
-(or jpg, jpeg, gif).
-2. This is the second screen shot
+Yes! The block outputs FAQPage JSON-LD for Google rich results.
 
 == Changelog ==
 
 = 0.1.0 =
-* Release
+* Initial release.
 
-== Arbitrary section ==
+== Credits ==
 
-You may provide arbitrary sections, in the same format as the ones above. This may be of use for extremely complicated
-plugins where more information needs to be conveyed that doesn't fit into the categories of "description" or
-"installation." Arbitrary sections will be shown below the built-in sections outlined above.
+Created by [Rui Lopes](https://github.com/ruilopes) for Usercentrics.
+
+== License ==
+
+GPL-2.0-or-later
